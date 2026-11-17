@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@source '../views';
+@source '../js';
+
+/* Token desain SkillGrow, diambil dari file Figma "UI SkillGrow". */
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+    --color-canvas: #faf8f6;
+    --color-surface: #fcfaf8;
+    --color-chip: #f4efea;
+    --color-line: #e8ded5;
+    --color-track: #f1e9e2;
+
+    --color-ink: #292522;
+    --color-body: #4f4842;
+    --color-nav: #5d5650;
+    --color-muted: #77706a;
+    --color-faint: #a69e97;
+    --color-divider: #d9ccbf;
+
+    --color-brand: #b95722;
+    --color-brand-hover: #a34b1c;
+    --color-brand-bright: #d96c2f;
+    --color-brand-deep: #98451c;
+    --color-brand-soft: #fff1e7;
+    --color-brand-tint: #ffe6d3;
+
+    --color-ok: #2e7d4f;
+    --color-ok-soft: #e8f4ec;
+    --color-warn: #d4920e;
+    --color-warn-ink: #946006;
+    --color-warn-soft: #fdf2dc;
+    --color-bad: #b4372f;
+    --color-bad-soft: #fbebe9;
+    --color-info: #2f5f9e;
+    --color-info-soft: #e7eef8;
+}
+
+body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+}
+
+button:not(:disabled),
+a,
+label[for],
+select {
+    cursor: pointer;
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-brand-bright);
+    outline-offset: 2px;
+}
